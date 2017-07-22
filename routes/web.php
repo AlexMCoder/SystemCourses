@@ -13,6 +13,8 @@
 
 Route::get('/', 'IndexController@index');
 Route::get('/cursos', 'CursoController@listarCursos');
+Route::get('/galeria', 'GaleriaController@index');
+Route::get('/about', 'AboutController@index');
 
 Route::post('/contato-enviar', 'ContatoController@contatoEnvia');
 

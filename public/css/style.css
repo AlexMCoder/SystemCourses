@@ -995,6 +995,11 @@ figure.effect-apollo:hover figcaption::before {
 	-moz-opacity: 0;
 	filter: alpha(opacity=0);
 }
+
+.col-md-6.wthree_about_grid_left p {
+    text-align: justify;
+}
+
 /*-- //to-top --*/
 @media (max-width:1440px){
 	.contact-left-w3ls:before {

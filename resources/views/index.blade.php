@@ -4,8 +4,7 @@
 <title>Cursos T.I</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="Inspire Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
-Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<meta name="keywords" content="Cursos gratuitos com os melhores professores do Brasil" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
  function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!-- css -->
@@ -281,131 +280,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="clearfix"></div>
 		</div>
 	</div>
-	<!-- Gallery
-	<div class="gallery" id="gallery">
-		<div class="container">
-			<h3>GALLERY</h3>
-			<div class="gallery-grids">
-				<div class="col-md-6 col-sm-6 gallery-grids-left gallery-grids-left-gallery1-top">
-					<div class="gallery-grid">
-						<a class="example-image-link" href="img/gallery-1.jpg" data-lightbox="example-set" data-title="">
-							<div class="grid">
-								<figure class="effect-apollo">
-									<img src="img/gallery-1.jpg" alt=""/>
-										<figcaption></figcaption>
-								</figure>
-							</div>
-						</a>
-					</div>
-					<div class="gallery-grids-left-sub">
-						<div class="col-md-6 col-sm-6 gallery-grids-left-subl">
-							<div class="gallery-grid">
-								<a class="example-image-link" href="img/gallery-4.jpg" data-lightbox="example-set" data-title="">
-									<div class="grid">
-										<figure class="effect-apollo">
-											<img src="img/gallery-4.jpg" alt=""/>
-												<figcaption></figcaption>
-										</figure>
-									</div>
-								</a>
-							</div>
-							<div class="gallery-grid gallery-grid-sub grid-middle gallery-grid-sub-left-bottom">
-								<a class="example-image-link" href="img/gallery-5.jpg" data-lightbox="example-set" data-title="">
-									<div class="grid">
-										<figure class="effect-apollo">
-											<img src="img/gallery-5.jpg" alt=""/>
-												<figcaption></figcaption>
-										</figure>
-									</div>
-								</a>
-							</div>
-						</div>
-						<div class="col-md-6 col-sm-6 gallery-grids-left-subr gallery-grids-left-subr-long">
-							<div class="gallery-grid">
-								<a class="example-image-link" href="img/gallery-7.jpg" data-lightbox="example-set" data-title="">
-									<div class="grid">
-										<figure class="effect-apollo">
-											<img src="img/gallery-7.jpg" alt=""/>
-												<figcaption></figcaption>
-										</figure>
-									</div>
-								</a>
-							</div>
-						</div>
-						<div class="clearfix"></div>
-					</div>
-				</div>
-				<div class="col-md-6 col-sm-6 gallery-grids-left">
-					<div class="col-md-6 col-sm-6 gallery-grids-right gallery-grids-right-first">
-						<div class="gallery-grid">
-							<a class="example-image-link" href="img/gallery-2.jpg" data-lightbox="example-set" data-title="">
-								<div class="grid">
-									<figure class="effect-apollo">
-										<img src="img/gallery-2.jpg" alt=""/>
-											<figcaption></figcaption>
-									</figure>
-								</div>
-							</a>
-						</div>
-					</div>
-					<div class="col-md-6 col-sm-6 gallery-grids-right gallery-grids-right-two">
-						<div class="gallery-grid">
-							<a class="example-image-link" href="img/gallery-3.jpg" data-lightbox="example-set" data-title="">
-								<div class="grid">
-									<figure class="effect-apollo">
-										<img src="img/gallery-3.jpg" alt=""/>
-											<figcaption></figcaption>
-									</figure>
-								</div>
-							</a>
-						</div>
-					</div>
-					<div class="clearfix"></div>
-					<div class="gallery-grids-right1 gallery-grids-right-hand">
-						<div class="gallery-grid">
-							<a class="example-image-link" href="img/gallery-6.jpg" data-lightbox="example-set" data-title="">
-								<div class="grid">
-									<figure class="effect-apollo">
-										<img src="img/gallery-6.jpg" alt=""/>
-											<figcaption></figcaption>
-									</figure>
-								</div>
-							</a>
-						</div>
-					</div>
-					<div class="col-md-6 col-sm-6 gallery-grids-right gallery-8">
-						<div class="gallery-grid">
-							<a class="example-image-link" href="img/gallery-8.jpg" data-lightbox="example-set" data-title="">
-								<div class="grid">
-									<figure class="effect-apollo">
-										<img src="img/gallery-8.jpg" alt=""/>
-											<figcaption></figcaption>
-									</figure>
-								</div>
-							</a>
-						</div>
-					</div>
-					<div class="col-md-6 col-sm-6 gallery-grids-right gallery-9">
-						<div class="gallery-grid">
-							<a class="example-image-link" href="img/gallery-9.jpg" data-lightbox="example-set" data-title="">
-								<div class="grid">
-									<figure class="effect-apollo">
-										<img src="img/gallery-9.jpg" alt=""/>
-											<figcaption></figcaption>
-									</figure>
-								</div>
-							</a>
-						</div>
-					</div>
-					<div class="clearfix"></div>
-				</div>
-				<div class="clearfix"></div>
-			</div>
-
-		</div>
-	</div>
-Gallery -->
-
 	<div class="contact-w3-agileits" id="contact">
 		<div class="container">
 			<div class="col-md-5 contact-left-w3ls">
@@ -469,36 +343,5 @@ Gallery -->
 	<div class="footer-w3l">
 		<p> 2017 todos os direitos reservados</p>
 	</div>
-<!--<div class="pop-up">
-	<div id="small-dialog" class="mfp-hide book-form">
-		<h3>Sign In </h3>
-			<form action="#" method="post">
-				<input type="text" name="Email" class="email" placeholder="Email" required=""/>
-				<input type="password" name="Password" class="password" placeholder="Password" required=""/>
-				<ul>
-				<li>
-					<input type="checkbox" id="brand1" value="">
-					<label for="brand1"><span></span>Remember me</label>
-				</li>
-			</ul>
-            <a href="#">Forgot Password?</a><br>
-			<div class="clearfix"></div>
-				<input type="submit" value="Sign In">
-			</form>
-	</div>
-</div>
-<div class="pop-up">
-	<div id="small-dialog2" class="mfp-hide book-form">
-		<h3>Sign Up</h3>
-			<form action="#" method="post">
-				<input type="text" name="Name" placeholder="Your Name" required=""/>
-				<input type="text" name="Email" class="email" placeholder="Email" required=""/>
-				<input type="password" name="Password" class="password" placeholder="Password" required=""/>
-				<input type="password" name="Password" class="password" placeholder="Confirm Password" required=""/>
-				<input type="submit" value="Sign Up">
-			</form>
-	</div>
-</div>-->
 </body>
 </html>
-3
