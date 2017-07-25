@@ -115,12 +115,12 @@
 				</div>
 				<div class="navbar-collapse agileits w3layouts collapse hover-effect" id="navbar">
 					<ul class="agileits w3layouts">
-						<li class="agileits w3layouts"><a href="#" class="active">Inicio</a></li>
-						<li class="agileits w3layouts"><a class="scroll" href="#about">Quem Somos</a></li>
+						<li class="agileits w3layouts"><a href="/" class="active">Inicio</a></li>
+						<li class="agileits w3layouts"><a href="/about">Quem Somos</a></li>
 						<!--<li class="agileits w3layouts"><a class="scroll" href="#team">Quem Somos</a></li>-->
-						<li class="agileits w3layouts"><a class="scroll" href="#services">Cursos</a></li>
-						<li class="agileits w3layouts"><a class="scroll" href="#team">Equipe de Professores</a></li>
-						<li class="agileits w3layouts"><a class="scroll" href="#contact">Contato</a></li>
+						<li class="agileits w3layouts"><a href="/cursos">Cursos</a></li>
+						<li class="agileits w3layouts"><a href="/galeria">Galeria de Fotos</a></li>
+						<li class="agileits w3layouts"><a href="#contact">Contato</a></li>
 					</ul>
 				</div>
 			</nav>

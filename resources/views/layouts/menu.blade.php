@@ -9,3 +9,4 @@
 <li class="{{ Request::is('contatos*') ? 'active' : '' }}">
     <a href="{!! route('contatos.index') !!}"><i class="fa fa-edit"></i><span>Contatos</span></a>
 </li>
+
