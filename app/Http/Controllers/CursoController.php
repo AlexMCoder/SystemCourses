@@ -64,7 +64,7 @@ class CursoController extends AppBaseController {
 		$course->file = $request->file('file')->getClientOriginalName();
 		$course->update();
 
-		Flash::success('Curso saved successfully.');
+		Flash::success('Curso cadastrado com sucesso!');
 
 		return redirect(route('cursos.index'));
 	}

@@ -1,18 +1,18 @@
 <!-- Id Field -->
 <div class="form-group">
-    {!! Form::label('id', 'Id:') !!}
+    {!! Form::label('id', 'Nº:') !!}
     <p>{!! $curso->id !!}</p>
 </div>
 
 <!-- Name Field -->
 <div class="form-group">
-    {!! Form::label('name', 'Name:') !!}
+    {!! Form::label('name', 'Nome:') !!}
     <p>{!! $curso->name !!}</p>
 </div>
 
 <!-- File Field -->
 <div class="form-group">
-    {!! Form::label('file', 'File:') !!}
+    {!! Form::label('file', 'Ícone:') !!}
     <p>{!! $curso->file !!}</p>
 </div>
 

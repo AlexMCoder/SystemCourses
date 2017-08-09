@@ -1,12 +1,12 @@
 <!-- Name Field -->
 <div class="form-group col-sm-6">
-    {!! Form::label('name', 'Name:') !!}
+    {!! Form::label('name', 'Nome do Curso:') !!}
     {!! Form::text('name', null, ['class' => 'form-control']) !!}
 </div>
 
 <!-- File Field -->
 <div class="form-group col-sm-6">
-    {!! Form::label('file', 'File:') !!}
+    {!! Form::label('file', 'Ícone do Curso:') !!}
     {!! Form::file('file') !!}
 </div>
 <div class="clearfix"></div>
@@ -19,6 +19,6 @@
 
 <!-- Submit Field -->
 <div class="form-group col-sm-12">
-    {!! Form::submit('Save', ['class' => 'btn btn-primary']) !!}
-    <a href="{!! route('cursos.index') !!}" class="btn btn-default">Cancel</a>
+    {!! Form::submit('Salvar', ['class' => 'btn btn-primary']) !!}
+    <a href="{!! route('cursos.index') !!}" class="btn btn-default">Cancelar</a>
 </div>
