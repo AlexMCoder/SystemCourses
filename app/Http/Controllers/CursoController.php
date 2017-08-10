@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\CursoVideo;
+use App\Models\CursoVideo;
 use App\Http\Controllers\AppBaseController;
 use App\Http\Requests\CreateCursoRequest;
 use App\Http\Requests\UpdateCursoRequest;
@@ -63,6 +63,29 @@ class CursoController extends AppBaseController {
 		$course       = Curso::find($curso->id);
 		$course->file = $request->file('file')->getClientOriginalName();
 		$course->update();
+
+		Flash::success('Curso cadastrado com sucesso!');
+
+		return redirect(route('cursos.index'));
+	}
+
+	public function storeVideo(Request $request) {
+		// $input = $request->all();
+
+		$video = $request->link;
+
+		$iframe = "<iframe width='560' height='315' src='https://www.youtube.com/watch?v=$video' frameborder='0' itemprop='video' allowfullscreen></iframe>";
+
+		if($value = str_contains($request->link, '<iframe')){
+
+		}
+
+		if($value = str_contains($request->link, 'http')){
+			$iframe = "<iframe width='560' height='315' src='$video' frameborder='0' itemprop='video' allowfullscreen></iframe>";
+		}
+		$request['link'] = $iframe;
+		CursoVideo::create($request->all());
+
 
 		Flash::success('Curso cadastrado com sucesso!');
 
@@ -154,9 +177,10 @@ class CursoController extends AppBaseController {
 		return redirect(route('cursos.index'));
 	}
 
-	public function submitVideo($cod) {
-		$videos = CursoVideo::where('curso_id', $cod)->get();
-		return view('cursos.video', compact('videos'));
+	public function submitVideo($code) {
+	$videos = CursoVideo::where('curso_id', $code)->get();
+
+		return view('cursos.list', ['videos' => $videos, 'code' => $code]);
 	}
 
 	public function listarCursos() {
@@ -165,5 +189,10 @@ class CursoController extends AppBaseController {
 		$cursos = Curso::all();
 
 		return view('cursos', compact('professores', 'cursos'));
+	}
+
+	public function createVideo($code){
+		$videos = Curso::where('id', $code)->first();
+		return view('cursos.video', compact('videos'));
 	}
 }

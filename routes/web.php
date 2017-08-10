@@ -40,3 +40,8 @@ Route::group(['middleware' => 'auth', 'prefix' => '/sistema'], function () {
 Route::resource('usuarios', 'UsuariosController');
 
 Route::resource('users', 'UserController');
+
+Route::post('/cursos/videos/add', 'CursoController@storeVideo')->name('add.video');
+Route::get('/cursos/{code}/videos/create', 'CursoController@createVideo')->name('create.video');
+
+// Route::get('/cursos/{code}/videos/list', 'CursoController@listVideos')->name('list.video');

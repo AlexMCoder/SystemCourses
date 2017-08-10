@@ -3,7 +3,10 @@
 @section('content')
     <section class="content-header">
         <h1>
-            Adicionar Vídeos
+            Listar Vídeos
+        </h1>
+        <h1 class="pull-right">
+           <a class="btn btn-primary pull-right" style="margin-top: -10px;margin-bottom: 5px" href="{!! route('create.video', ['code' => $code]) !!}">Cadastrar Video</a>
         </h1>
     </section>
     <div class="content">
@@ -12,8 +15,6 @@
 
             <div class="box-body">
                 <div class="row">
-                    <form action="{{ route('add.video') }}" method="post" >
-                    {{ csrf_field() }}
                     <table class="table table-responsive">
                         <thead>
                         <th>
@@ -23,18 +24,13 @@
                         <th>Descrição</th>
                         </thead>
                         <tbody>
-                        <input type="hidden" value="{{ $videos->id }}" name="curso_id">
-                        
+                        @if (count($videos) == 0)
+                        @else
+                        @foreach($videos as $video)       
                             <tr>
-                                <td>
-                                    {!! Form::text('link', null, ['class' => 'form-control']) !!}
-                                </td>
-                                <td>
-                                    {!! Form::text('titulo', null, ['class' => 'form-control']) !!}
-                                </td>
-                                <td>
-                                    {!! Form::textarea('descricao') !!}
-                                </td>
+                                <td>{!! $video->link !!}</td>
+                                <td>{{ $video->titulo }}</td>
+                                <td>{{ $video->descricao }}</td>
                                 <td>
                                     <button type="submit" class='btn btn-default btn-xs'><i
                                                 class="glyphicon glyphicon-plus-sign"></i></button>
@@ -43,11 +39,10 @@
 
                                 </td>
                             </tr>
-                        
+                        @endforeach
+                        @endif
                         </tbody>
                     </table>
-
-                    {!! Form::close() !!}
                 </div>
             </div>
         </div>
