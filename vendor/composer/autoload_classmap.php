@@ -7,6 +7,7 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'App\\Console\\Kernel' => $baseDir . '/app/Console/Kernel.php',
+    'App\\CoursesVideos' => $baseDir . '/app/CoursesVideos.php',
     'App\\CursoVideo' => $baseDir . '/app/CursoVideo.php',
     'App\\Exceptions\\Handler' => $baseDir . '/app/Exceptions/Handler.php',
     'App\\Http\\Controllers\\AboutController' => $baseDir . '/app/Http/Controllers/AboutController.php',
@@ -68,6 +69,7 @@ return array(
     'Collective\\Html\\HtmlFacade' => $vendorDir . '/laravelcollective/html/src/HtmlFacade.php',
     'Collective\\Html\\HtmlServiceProvider' => $vendorDir . '/laravelcollective/html/src/HtmlServiceProvider.php',
     'CreateContatosTable' => $baseDir . '/database/migrations/2017_05_30_195237_create_contatos_table.php',
+    'CreateCoursesVideosTable' => $baseDir . '/database/migrations/2017_08_10_180950_create_courses_videos_table.php',
     'CreateCursoVideosTable' => $baseDir . '/database/migrations/2017_05_31_233845_create_curso_videos_table.php',
     'CreateCursosTable' => $baseDir . '/database/migrations/2017_05_30_192859_create_cursos_table.php',
     'CreatePasswordResetsTable' => $baseDir . '/database/migrations/2014_10_12_100000_create_password_resets_table.php',

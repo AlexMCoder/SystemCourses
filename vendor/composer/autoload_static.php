@@ -340,6 +340,7 @@ class ComposerStaticInitb6ccc422fd019f39b3ce39a15f96ac31
 
     public static $classMap = array (
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
+        'App\\CoursesVideos' => __DIR__ . '/../..' . '/app/CoursesVideos.php',
         'App\\CursoVideo' => __DIR__ . '/../..' . '/app/CursoVideo.php',
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
         'App\\Http\\Controllers\\AboutController' => __DIR__ . '/../..' . '/app/Http/Controllers/AboutController.php',
@@ -401,6 +402,7 @@ class ComposerStaticInitb6ccc422fd019f39b3ce39a15f96ac31
         'Collective\\Html\\HtmlFacade' => __DIR__ . '/..' . '/laravelcollective/html/src/HtmlFacade.php',
         'Collective\\Html\\HtmlServiceProvider' => __DIR__ . '/..' . '/laravelcollective/html/src/HtmlServiceProvider.php',
         'CreateContatosTable' => __DIR__ . '/../..' . '/database/migrations/2017_05_30_195237_create_contatos_table.php',
+        'CreateCoursesVideosTable' => __DIR__ . '/../..' . '/database/migrations/2017_08_10_180950_create_courses_videos_table.php',
         'CreateCursoVideosTable' => __DIR__ . '/../..' . '/database/migrations/2017_05_31_233845_create_curso_videos_table.php',
         'CreateCursosTable' => __DIR__ . '/../..' . '/database/migrations/2017_05_30_192859_create_cursos_table.php',
         'CreatePasswordResetsTable' => __DIR__ . '/../..' . '/database/migrations/2014_10_12_100000_create_password_resets_table.php',
