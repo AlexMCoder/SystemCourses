@@ -9,7 +9,7 @@
 
 			@foreach ($detalhe as $detalhe)
 						<h2>{{ $detalhe->titulo}}</h2>
-					@endforeach
+			@endforeach
 		</div>
 	</main>
 @endsection

@@ -198,6 +198,7 @@ class CursoController extends AppBaseController {
 
 	//preview in FRONT
 	public function detalheCurso($code){
+		
 		$detalhe = CursoVideo::where('curso_id', $code)->get();
 
 		$curso = Curso::where('id', $code)->first();
