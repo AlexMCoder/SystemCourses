@@ -10,7 +10,7 @@
 					@foreach ($cursos as $curso)
 						<li class="conteudoPrincipal-cursos-link">
 							<img src="/img/cursos/{{ $curso->file }}" alt="" width="60px">
-							<a href="#">{{ $curso->name }}</a>
+							<a href="{{route('detalhe.curso', ['code' => $curso->id])}}">{{ $curso->name }}</a>
 						</li>
 					@endforeach
 				</ul>

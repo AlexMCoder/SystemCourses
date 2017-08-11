@@ -74,7 +74,7 @@ class CursoController extends AppBaseController {
 
 		$video = $request->link;
 
-		$iframe = "<iframe width='560' height='315' src='https://www.youtube.com/watch?v=$video' frameborder='0' itemprop='video' allowfullscreen></iframe>";
+		$iframe = "<iframe width='560' height='315' src='https://www.youtube.com/embed/$video' frameborder='0' itemprop='video' allowfullscreen></iframe>";
 
 		if($value = str_contains($request->link, '<iframe')){
 
@@ -183,6 +183,7 @@ class CursoController extends AppBaseController {
 		return view('cursos.list', ['videos' => $videos, 'code' => $code]);
 	}
 
+	//preview in FRONT
 	public function listarCursos() {
 		$professores = professorUser::all();
 
@@ -194,5 +195,14 @@ class CursoController extends AppBaseController {
 	public function createVideo($code){
 		$videos = Curso::where('id', $code)->first();
 		return view('cursos.video', compact('videos'));
+	}
+
+	//preview in FRONT
+	public function detalheCurso($code){
+		$detalhe = CursoVideo::where('curso_id', $code)->get();
+
+		$curso = Curso::where('id', $code)->first();
+
+		return view('detalhe-curso', ['detalhe' => $detalhe, 'code' => $code, 'curso' => $curso]);
 	}
 }
