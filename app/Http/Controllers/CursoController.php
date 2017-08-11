@@ -182,6 +182,7 @@ class CursoController extends AppBaseController {
 		return view('cursos.list', ['videos' => $videos, 'code' => $code]);
 	}
 
+	//preview in FRONT
 	public function listarCursos() {
 		$professores = professorUser::all();
 
@@ -193,5 +194,15 @@ class CursoController extends AppBaseController {
 	public function createVideo($code) {
 		$videos = Curso::where('id', $code)->first();
 		return view('cursos.video', compact('videos'));
+	}
+
+	//preview in FRONT
+	public function detalheCurso($code){
+		
+		$detalhe = CursoVideo::where('curso_id', $code)->get();
+
+		$curso = Curso::where('id', $code)->first();
+
+		return view('detalhe-curso', ['detalhe' => $detalhe, 'code' => $code, 'curso' => $curso]);
 	}
 }

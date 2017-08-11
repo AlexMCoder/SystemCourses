@@ -16,6 +16,8 @@ Route::get('/cursos', 'CursoController@listarCursos');
 Route::get('/galeria', 'GaleriaController@index');
 Route::get('/about', 'AboutController@index');
 
+Route::get('/detalhe-curso/{code}', 'CursoController@detalheCurso')->name('detalhe.curso');
+
 Route::post('/contato-enviar', 'ContatoController@contatoEnvia');
 
 Auth::routes();
