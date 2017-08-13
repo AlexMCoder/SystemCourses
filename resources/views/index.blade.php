@@ -8,6 +8,24 @@
 			<a href="#contact" class="scroll"><img src="img/arrow.png" alt=" " /></a>
 		</div>
 	</div>
+	<div class="services" id="services">
+		<div class="container">
+			<h3>Cursos em Destaque</h3>
+			@foreach ($cursos as $curso)
+			<div class="col-md-4 services-grids services-grids1">
+				<!--<span class="glyphicon glyphicon-education" aria-hidden="true"></span>-->
+				<img src="/img/cursos/{{ $curso->file }}" alt="" width="128px">
+				<h4>{{ $curso->name }}</h4>
+				<p>{{ $curso->descricao }}</p>
+			</div>
+			@endforeach
+
+			<a class="btn btn-primary services-bottom" href="cursos">
+				Ver todos os cursos
+			</a>
+			<div class="clearfix"></div>
+		</div>
+	</div>
 	<!-- team -->
 	<div class="team" id="team">
 		<div class="container">
@@ -37,24 +55,6 @@
 		</div>
 	</div>
 <!-- //team -->
-	<div class="services" id="services">
-		<div class="container">
-			<h3>Cursos em Destaque</h3>
-			@foreach ($cursos as $curso)
-			<div class="col-md-4 services-grids services-grids1">
-				<!--<span class="glyphicon glyphicon-education" aria-hidden="true"></span>-->
-				<img src="/img/cursos/{{ $curso->file }}" alt="" width="128px">
-				<h4>{{ $curso->name }}</h4>
-				<p>{{ $curso->descricao }}</p>
-			</div>
-			@endforeach
-
-			<a class="btn btn-primary services-bottom" href="cursos">
-				Ver todos os cursos
-			</a>
-			<div class="clearfix"></div>
-		</div>
-	</div>
 	<div class="contact-w3-agileits" id="contact">
 		<div class="container">
 			<div class="col-md-5 contact-left-w3ls">
