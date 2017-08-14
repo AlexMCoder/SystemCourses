@@ -72,16 +72,6 @@ class VideoController extends Controller
 
 		return view('cursos.videos.list', ['videos' => $videos, 'code' => $code]);
 	}
-
-	//preview in FRONT
-	public function listarCursos() {
-		$professores = professorUser::all();
-
-		$cursos = Curso::all();
-
-		return view('cursos', compact('professores', 'cursos'));
-	}
-
 	public function createVideo($code) {
 		$videos = Curso::where('id', $code)->first();
 		return view('cursos.videos.video', compact('videos'));
