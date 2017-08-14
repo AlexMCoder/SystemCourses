@@ -5,6 +5,10 @@
 .button-trash-videos {
     margin-top: 5px;
 }
+.button-list-videos {
+	min-width: 85px;
+    margin-top: 5px;
+}
 
 /*descrição video*/
 

@@ -38,7 +38,7 @@
                                 <td>
                                     <button type="submit" class='btn btn-success btn-xs button-add-videos'><i
                                                 class="glyphicon glyphicon-plus-sign" title="Salvar"></i> Salvar</button><br>
-                                    <a href="#" class='btn btn-danger btn-xs button-add-videos'><i
+                                    <a href="{!! route('cursos.index') !!}" class='btn btn-danger btn-xs button-add-videos'><i
                                                 class="glyphicon glyphicon-remove-sign" title="Cancelar"></i> Cancelar</a>
 
                                 </td>
