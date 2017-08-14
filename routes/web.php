@@ -43,6 +43,8 @@ Route::group(['middleware' => 'auth', 'prefix' => '/sistema'], function () {
 		Route::get('/cursos/{code}/videos', 'VideoController@submitVideo')->name('enviar.video');
 		Route::post('/cursos/videos/add', 'VideoController@storeVideo')->name('add.video');
 		Route::get('/cursos/{code}/videos/create', 'VideoController@createVideo')->name('create.video');
+		Route::get('/cursos/{code}/videos/{id}/edit', 'VideoController@editVideo')->name('edit.video');
+		Route::post('/cursos/videos/save', 'VideoController@update')->name('save.video');
 	});
 
 

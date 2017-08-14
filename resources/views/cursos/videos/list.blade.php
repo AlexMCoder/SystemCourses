@@ -33,8 +33,8 @@
                                 <td width="20%">{{ $video->titulo }}</td>
                                 <td width="55%" class="description-videos">{{ $video->descricao }}</td>
                                 <td width="10%">
-                                    <button type="submit" class='btn btn-default btn-xs button-list-videos'><i
-                                                class="glyphicon glyphicon-plus-sign" title="Editar"></i> Editar</button>
+                                    <a href="{{ route('edit.video', ['code' => $code, 'id' => $video->id]) }}" class='btn btn-default btn-xs button-list-videos'><i
+                                                class="glyphicon glyphicon-plus-sign" title="Editar"></i> Editar</a>
                                     <a href="#" class='btn btn-danger btn-xs button-list-videos'><i
                                                 class="glyphicon glyphicon-remove-sign" title="Excluir"></i> Excluir</a>
 
