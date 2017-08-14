@@ -42,7 +42,7 @@
 					  	<label for="mensagem">Descreva sobre a necessidade da instituição</label>
 					  	<textarea class="form-control" rows="10" id="mensagem" placeholder="Descreva aqui quais acessórios a instituição está mais precisando atualmente"></textarea>
 					</div>
-					<button class="btn success" type="submit">Button</button>
+					<button class="btn success" type="submit">Enviar Solicitação</button>
 				</form>
 			</div>
 		</div>

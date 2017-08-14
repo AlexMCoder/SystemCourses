@@ -32,7 +32,6 @@ class ContatoController extends AppBaseController {
 		return view('contatos.index')
 			->with('contatos', $contatos);
 	}
-
 	/**
 	 * Show the form for creating a new Contato.
 	 *
@@ -149,4 +148,9 @@ class ContatoController extends AppBaseController {
 
 		return redirect()->back();
 	}
+
+	public function contatoEnviaFront(){
+		return view('contato');
+	}
+
 }
