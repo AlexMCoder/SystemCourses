@@ -193,7 +193,7 @@ a:focus, a:hover {
 .banner{
 	background:url('../img/banner3.jpg') no-repeat 0px 0px;
 	background-size:cover;
-	min-height:650px;
+	min-height:100vh;
 }
 .banner h3{
 	color:#fff;
@@ -829,8 +829,9 @@ figure.effect-apollo:hover figcaption::before {
 	filter: alpha(opacity=0);
 }
 
-.col-md-6.wthree_about_grid_left p {
+.wthree_about_grid_left p {
     text-align: justify;
+    font-size: 16px;
 }
 
 /*-- //to-top --*/
