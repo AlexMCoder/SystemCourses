@@ -14,9 +14,8 @@
 <link rel="stylesheet" href="{{ asset('css/style.css') }}" type="text/css" media="all" />
 <link rel="stylesheet" 	href="{{ asset('css/chocolat.css') }}" type="text/css" media="all">
 <!--// css -->
-<!-- font -->
-<link href="{{ asset('//fonts.googleapis.com/css?family=Josefin+Sans:400,100,100italic,300,300italic,400italic,600,600italic,700,700italic') }}" rel='stylesheet' type='text/css'>
-<link href='{{ asset('//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic') }}" rel='stylesheet' type='text/css'>
+<link href="https://fonts.googleapis.com/css?family=Roboto:900&amp;subset=latin-ext" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Droid+Sans|Roboto:500,900&amp;subset=latin-ext" rel="stylesheet">
 <!-- //font -->
 <script src="{{ asset('js/jquery-1.11.1.min.js') }}"></script>
 <script src="{{ asset('js/bootstrap.js') }}"></script>
@@ -78,26 +77,6 @@
 
 </head>
 <body>
-	<div class="header">
-		<div class="container">
-			<div class="w3l_header_left">
-				<ul>
-					<li><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>(44) 44 9 4444 4444</li>
-					<li><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span><a href="mailto:alexmpprog@gmail.com">alexmpprog@gmail.com</a></li>
-				</ul>
-			</div>
-
-			<div class="w3l_header_right">
-				<ul>
-					<li><a href="/sistema"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>Entrar</a></li>
-					<li><a href="#small-dialog2"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>Cadastrar</a></li>
-				</ul>
-			</div>
-
-			<div class="clearfix"> </div>
-
-		</div>
-	</div>
 	<div class="logo-navigation-w3layouts">
 		<div class="container">
 		<div class="logo-w3">
@@ -121,6 +100,8 @@
 						<li class="agileits w3layouts"><a href="/cursos">Cursos</a></li>
 						<li class="agileits w3layouts"><a href="/galeria">Galeria de Fotos</a></li>
 						<li class="agileits w3layouts"><a href="#contact">Contato</a></li>
+						<li class="agileits w3layouts"><a href="/loginAluno">Login</a></li>
+						<li class="agileits w3layouts"><a href="/cadastrar">Cadastrar</a></li>
 					</ul>
 				</div>
 			</nav>

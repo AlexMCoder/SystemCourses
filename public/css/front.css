@@ -10,8 +10,14 @@
     margin-top: 5px;
 }
 
+td.iframe-video iframe {
+    width: 180px;
+    height: 140px;
+}
+
 /*descrição video*/
 
 td.description-videos {
     text-align: justify;
 }
+

@@ -74,7 +74,7 @@ class CursoController extends AppBaseController {
 
 		$video = $request->link;
 
-		$iframe = "<iframe width='160' height='115' src='https://www.youtube.com/embed/$video' frameborder='0' itemprop='video' allowfullscreen></iframe>";
+		$iframe = "<iframe width='560' height='360' src='https://www.youtube.com/embed/$video' frameborder='0' itemprop='video' allowfullscreen></iframe>";
 
 		if ($value = str_contains($request->link, '<iframe')) {
 
