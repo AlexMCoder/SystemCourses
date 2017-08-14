@@ -29,7 +29,7 @@
                         @else
                         @foreach($videos as $video)       
                             <tr>
-                                <td width="15%">{!! $video->link !!}</td>
+                                <td width="15%" class="iframe-video">{!! $video->link !!}</td>
                                 <td width="20%">{{ $video->titulo }}</td>
                                 <td width="55%" class="description-videos">{{ $video->descricao }}</td>
                                 <td width="10%">
