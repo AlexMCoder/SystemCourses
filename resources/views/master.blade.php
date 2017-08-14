@@ -99,7 +99,8 @@
 						<!--<li class="agileits w3layouts"><a class="scroll" href="#team">Quem Somos</a></li>-->
 						<li class="agileits w3layouts"><a href="/cursos">Cursos</a></li>
 						<li class="agileits w3layouts"><a href="/galeria">Galeria de Fotos</a></li>
-						<li class="agileits w3layouts"><a href="#contact">Contato</a></li>
+						<li class="agileits w3layouts"><a href="/contato">Contato</a></li>
+						<li class="agileits w3layouts"><a href="/doacao">Doação</a></li>
 						<li class="agileits w3layouts"><a href="/loginAluno">Login</a></li>
 						<li class="agileits w3layouts"><a href="/cadastrar">Cadastrar</a></li>
 					</ul>

@@ -49,7 +49,7 @@ a:focus, a:hover {
 	padding:20px 0px;
 }
 .logo-w3{
-	width:20%;
+	width:15%;
 	float:left;
 	color: #fff;
 	font-weight: 600;
@@ -65,7 +65,7 @@ a:focus, a:hover {
 	text-transform:uppercase;
 }
 .navigation{
-	width:80%;
+	width:85%;
 	float:right;
 }
 .navbar {
