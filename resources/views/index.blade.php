@@ -16,10 +16,10 @@
 				<!--<span class="glyphicon glyphicon-education" aria-hidden="true"></span>-->
 				<img src="/img/cursos/{{ $curso->file }}" alt="" width="128px">
 				<h4>{{ $curso->name }}</h4>
-				<p>{{ $curso->descricao }}</p>
+				<p>{{ str_limit($curso->descricao,30) }}</p>
 			</div>
 			@endforeach
-
+			<br>
 			<a class="btn btn-primary services-bottom" href="cursos">
 				Ver todos os cursos
 			</a>
@@ -59,16 +59,6 @@
 		<div class="container">
 			<div class="col-md-5 contact-left-w3ls">
 				<h3>Contato</h3>
-				<!--<div class="visit">
-					<div class="col-md-2 contact-icon-wthree">
-						<span class="glyphicon glyphicon-home" aria-hidden="true"></span>
-					</div>
-					<div class="col-md-10 contact-text-agileinf0">
-						<h4>Visit us</h4>
-						<h5>Parma Via Modena,BO, Italy</h5>
-					</div>
-					<div class="clearfix"></div>
-				</div>-->
 				<div class="mail">
 					<div class="col-md-2 contact-icon-wthree">
 						<span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>

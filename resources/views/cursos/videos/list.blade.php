@@ -35,8 +35,8 @@
                                 <td width="10%">
                                     <a href="{{ route('edit.video', ['code' => $code, 'id' => $video->id]) }}" class='btn btn-default btn-xs button-list-videos'><i
                                                 class="glyphicon glyphicon-plus-sign" title="Editar"></i> Editar</a>
-                                    <a href="#" class='btn btn-danger btn-xs button-list-videos'><i
-                                                class="glyphicon glyphicon-remove-sign" title="Excluir"></i> Excluir</a>
+                                    {{-- <a href="#" class='btn btn-danger btn-xs button-list-videos'><i
+                                                class="glyphicon glyphicon-remove-sign" title="Excluir"></i> Excluir</a> --}}
 
                                 </td>
                             </tr>
