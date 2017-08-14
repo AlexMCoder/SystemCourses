@@ -1,9 +1,9 @@
 @extends('master')
 
 @section('content')
-	<main class="conteudoPrincipal">
+	<main class="conteudoPrincipal" style="background: #eef1f2;">
 		<div class="container">
-			<h1 style="font-size: 30px;font-weight: bold;padding: 15px;">Nossos cursos</h1>
+			<h1 style="font-size: 30px;font-weight: bold;padding: 40px 10px 0px 10px;">Nossos cursos</h1>
 
 			<nav>
 				<ul class="conteudoPrincipal-cursos">

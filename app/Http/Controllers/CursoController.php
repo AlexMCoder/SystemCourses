@@ -153,4 +153,13 @@ class CursoController extends AppBaseController {
 
 		return redirect(route('cursos.index'));
 	}
+
+	//preview in FRONT
+	public function listarCursos() {
+		$professores = professorUser::all();
+
+		$cursos = Curso::all();
+
+		return view('cursos', compact('professores', 'cursos'));
+	}
 }
