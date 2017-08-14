@@ -16,7 +16,7 @@ Route::get('/cursos', 'CursoController@listarCursos');
 Route::get('/galeria', 'GaleriaController@index');
 Route::get('/about', 'AboutController@index');
 
-Route::get('/detalhe-curso/{code}', 'CursoController@detalheCurso')->name('detalhe.curso');
+Route::get('/detalhe-curso/{code}', 'VideoController@detalheCurso')->name('detalhe.curso');
 
 Route::post('/contato-enviar', 'ContatoController@contatoEnvia');
 
@@ -36,14 +36,15 @@ Route::group(['middleware' => 'auth', 'prefix' => '/sistema'], function () {
 		Route::resource('/cursos', 'CursoController');
 
 		Route::resource('/contatos', 'ContatoController');
-		Route::get('/cursos/{code}/videos', 'CursoController@submitVideo')->name('enviar.video');
+		Route::resource('usuarios', 'UsuariosController');
+
+		Route::resource('users', 'UserController');
+
+		Route::get('/cursos/{code}/videos', 'VideoController@submitVideo')->name('enviar.video');
+		Route::post('/cursos/videos/add', 'VideoController@storeVideo')->name('add.video');
+		Route::get('/cursos/{code}/videos/create', 'VideoController@createVideo')->name('create.video');
 	});
 
-Route::resource('usuarios', 'UsuariosController');
 
-Route::resource('users', 'UserController');
-
-Route::post('/cursos/videos/add', 'CursoController@storeVideo')->name('add.video');
-Route::get('/cursos/{code}/videos/create', 'CursoController@createVideo')->name('create.video');
 
 // Route::get('/cursos/{code}/videos/list', 'CursoController@listVideos')->name('list.video');

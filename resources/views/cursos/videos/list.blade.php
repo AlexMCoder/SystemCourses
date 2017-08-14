@@ -3,7 +3,7 @@
 @section('content')
     <section class="content-header">
         <h1>
-            Listar Vídeos
+            Lista de Vídeos
         </h1>
         <h1 class="pull-right">
            <a class="btn btn-primary pull-right" style="margin-top: -30px;margin-bottom: 5px" href="{!! route('create.video', ['code' => $code]) !!}">Cadastrar Video</a>
