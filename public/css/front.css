@@ -1,7 +1,13 @@
-.btn-group a {
+.button-add-videos {
     min-width: 180px;
     margin-top: 5px;
 }
-.btn-group button {
+.button-trash-videos {
     margin-top: 5px;
+}
+
+/*descrição video*/
+
+td.description-videos {
+    text-align: justify;
 }
