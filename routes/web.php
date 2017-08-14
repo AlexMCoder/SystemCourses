@@ -15,6 +15,7 @@ Route::get('/', 'IndexController@index');
 Route::get('/cursos', 'CursoController@listarCursos');
 Route::get('/galeria', 'GaleriaController@index');
 Route::get('/about', 'AboutController@index');
+Route::get('/doacao', 'DoacaoController@index');
 
 Route::get('/detalhe-curso/{code}', 'VideoController@detalheCurso')->name('detalhe.curso');
 
