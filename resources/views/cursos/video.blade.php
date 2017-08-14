@@ -36,10 +36,10 @@
                                     {!! Form::textarea('descricao') !!}
                                 </td>
                                 <td>
-                                    <button type="submit" class='btn btn-default btn-xs'><i
-                                                class="glyphicon glyphicon-plus-sign"></i></button>
-                                    <a href="#" class='btn btn-default btn-xs'><i
-                                                class="glyphicon glyphicon-remove-sign"></i></a>
+                                    <button type="submit" class='btn btn-success btn-xs button-add-videos'><i
+                                                class="glyphicon glyphicon-plus-sign" title="Salvar"></i> Salvar</button><br>
+                                    <a href="#" class='btn btn-danger btn-xs button-add-videos'><i
+                                                class="glyphicon glyphicon-remove-sign" title="Cancelar"></i> Cancelar</a>
 
                                 </td>
                             </tr>

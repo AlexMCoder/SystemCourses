@@ -17,21 +17,22 @@
                 <div class="row">
                     <table class="table table-responsive">
                         <thead>
-                        <th>
+                        <th width="15%">
                             Link do video
                         </th>
-                        <th>Título</th>
-                        <th>Descrição</th>
+                        <th width="20%">Título</th>
+                        <th width="55%">Descrição</th>
+                        <th width="10%">Ações</th>
                         </thead>
                         <tbody>
                         @if (count($videos) == 0)
                         @else
                         @foreach($videos as $video)       
                             <tr>
-                                <td>{!! $video->link !!}</td>
-                                <td>{{ $video->titulo }}</td>
-                                <td>{{ $video->descricao }}</td>
-                                <td>
+                                <td width="15%">{!! $video->link !!}</td>
+                                <td width="20%">{{ $video->titulo }}</td>
+                                <td width="55%" class="description-videos">{{ $video->descricao }}</td>
+                                <td width="10%">
                                     <button type="submit" class='btn btn-default btn-xs'><i
                                                 class="glyphicon glyphicon-plus-sign"></i></button>
                                     <a href="#" class='btn btn-default btn-xs'><i
