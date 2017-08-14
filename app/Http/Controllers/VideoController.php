@@ -38,6 +38,35 @@ class VideoController extends Controller
 		return redirect(route('cursos.index'));
 	}
 
+	public function editVideo($code, $id) {
+		$video = CursoVideo::where('id', $id)->first();
+
+		return view('cursos.videos.edit', ['video' => $video]);
+	}
+
+	public function update(Request $request) {
+
+		$id = $request->id;
+		$video = CursoVideo::findOrFail($id);
+
+		$iframe = "<iframe width='560' height='360' src='https://www.youtube.com/embed/$request->link' frameborder='0' itemprop='video' allowfullscreen></iframe>";
+
+		if ($value = str_contains($request->link, '<iframe')) {
+
+		}
+
+		if ($value = str_contains($request->link, 'http')) {
+			$iframe = "<iframe width='160' height='115' src='$request->link' frameborder='0' itemprop='video' allowfullscreen></iframe>";
+		}
+		$request['link'] = $iframe;
+
+		$video->update($request->all());
+
+		Flash::success('Video updated successfully.');
+
+		return redirect(route('cursos.index'));
+	}
+
     public function submitVideo($code) {
 		$videos = CursoVideo::where('curso_id', $code)->get();
 
