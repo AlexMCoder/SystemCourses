@@ -19,7 +19,9 @@ Route::get('/doacao', 'DoacaoController@index');
 
 Route::get('/detalhe-curso/{code}', 'VideoController@detalheCurso')->name('detalhe.curso');
 
-Route::post('/contato-enviar', 'ContatoController@contatoEnvia');
+Route::post('/contato-enviar', 'ContatoController@contatoEnvia')->name('save.contato');;
+
+Route::get('/contato', 'ContatoController@contatoEnviaFront');
 
 Auth::routes();
 
