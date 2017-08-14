@@ -9,7 +9,7 @@
 body {
 	padding: 0;
 	margin: 0;
-	background: #FFF;
+	background: #eef1f2;
 	font-family: 'Droid Sans', sans-serif;
 }
 body a {
@@ -789,8 +789,11 @@ figure.effect-apollo:hover figcaption::before {
 }
 /*-- //contact --*/
 .footer-w3l{
-	padding:30px 0px;
-	background:#00bcd4
+	padding: 30px 0px;
+    background: #00bcd4;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
 }
 .footer-w3l p{
 	color:#fff;
@@ -1971,4 +1974,15 @@ div#contact {
 }
 .services-bottom {
     margin-top: 35px;
+}
+
+/*Doações*/
+.form-content {
+    padding: 15px 15px 15px 15px;
+    background: #fff;
+    margin-bottom: 40px;
+}
+
+.form-content form label {
+    padding: 10px;
 }
