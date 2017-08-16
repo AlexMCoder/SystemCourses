@@ -23,7 +23,7 @@ Route::get('/detalhe-curso/{code}', 'VideoController@detalheCurso')->name('detal
 
 Route::post('/contato-enviar', 'ContatoController@contatoEnvia')->name('save.contato');;
 
-Route::get('/contato', 'ContatoController@contatoEnviaFront');
+Route::get('/instituicao', 'InstituicaoController@index');
 
 Auth::routes();
 
