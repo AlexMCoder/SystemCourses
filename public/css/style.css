@@ -428,6 +428,7 @@ ul.wmuSliderPagination {
 /*-- team --*/
 .team{
 	padding:50px 0px;
+	background: #fff;
 }
 .team h3:before{
 	width:20%;
