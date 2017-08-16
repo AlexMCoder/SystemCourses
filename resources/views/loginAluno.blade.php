@@ -1,7 +1,7 @@
 @extends('master')
 
 @section('content')
-	<main class="conteudoPrincipal" style="background: #eef1f2;">
+	<main class="conteudoPrincipal" style="background: #eef1f2; height: 100vh;">
 	 	<div class="row" id="pwd-container">
 		    <div class="col-md-4"></div>
 		    
