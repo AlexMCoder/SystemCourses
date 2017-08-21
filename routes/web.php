@@ -50,6 +50,8 @@ Route::group(['middleware' => 'auth', 'prefix' => '/sistema'], function () {
 		Route::get('/cursos/{code}/videos/create', 'VideoController@createVideo')->name('create.video');
 		Route::get('/cursos/{code}/videos/{id}/edit', 'VideoController@editVideo')->name('edit.video');
 		Route::post('/cursos/videos/save', 'VideoController@update')->name('save.video');
+
+		Route::get('/galeriaPainel', 'GaleriaController@index')->name('index.galeria');
 	});
 
 

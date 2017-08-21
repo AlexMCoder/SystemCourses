@@ -6,10 +6,10 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'App\\Aluno' => $baseDir . '/app/Aluno.php',
+    'App\\Aluno' => $baseDir . '/app/Models/Aluno.php',
     'App\\Console\\Kernel' => $baseDir . '/app/Console/Kernel.php',
-    'App\\CursoVideo' => $baseDir . '/app/CursoVideo.php',
     'App\\Exceptions\\Handler' => $baseDir . '/app/Exceptions/Handler.php',
+    'App\\Galeria' => $baseDir . '/app/Galeria.php',
     'App\\Http\\Controllers\\AboutController' => $baseDir . '/app/Http/Controllers/AboutController.php',
     'App\\Http\\Controllers\\AlunoController' => $baseDir . '/app/Http/Controllers/AlunoController.php',
     'App\\Http\\Controllers\\AppBaseController' => $baseDir . '/app/Http/Controllers/AppBaseController.php',
@@ -25,6 +25,7 @@ return array(
     'App\\Http\\Controllers\\GaleriaController' => $baseDir . '/app/Http/Controllers/GaleriaController.php',
     'App\\Http\\Controllers\\HomeController' => $baseDir . '/app/Http/Controllers/HomeController.php',
     'App\\Http\\Controllers\\IndexController' => $baseDir . '/app/Http/Controllers/IndexController.php',
+    'App\\Http\\Controllers\\InstituicaoController' => $baseDir . '/app/Http/Controllers/InstituicaoController.php',
     'App\\Http\\Controllers\\UserController' => $baseDir . '/app/Http/Controllers/UserController.php',
     'App\\Http\\Controllers\\UsuariosController' => $baseDir . '/app/Http/Controllers/UsuariosController.php',
     'App\\Http\\Controllers\\VideoController' => $baseDir . '/app/Http/Controllers/VideoController.php',
@@ -77,6 +78,7 @@ return array(
     'CreateContatosTable' => $baseDir . '/database/migrations/2017_05_30_195237_create_contatos_table.php',
     'CreateCursoVideosTable' => $baseDir . '/database/migrations/2017_05_31_233845_create_curso_videos_table.php',
     'CreateCursosTable' => $baseDir . '/database/migrations/2017_05_30_192859_create_cursos_table.php',
+    'CreateGaleriasTable' => $baseDir . '/database/migrations/2017_08_21_174916_create_galerias_table.php',
     'CreatePasswordResetsTable' => $baseDir . '/database/migrations/2014_10_12_100000_create_password_resets_table.php',
     'CreateUsersTable' => $baseDir . '/database/migrations/2014_10_12_000000_create_users_table.php',
     'CreateprofessorUsersTable' => $baseDir . '/database/migrations/2017_05_30_191834_create_professor_users_table.php',
