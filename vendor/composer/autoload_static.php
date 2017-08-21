@@ -339,10 +339,10 @@ class ComposerStaticInitb6ccc422fd019f39b3ce39a15f96ac31
     );
 
     public static $classMap = array (
-        'App\\Aluno' => __DIR__ . '/../..' . '/app/Aluno.php',
+        'App\\Aluno' => __DIR__ . '/../..' . '/app/Models/Aluno.php',
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
-        'App\\CursoVideo' => __DIR__ . '/../..' . '/app/CursoVideo.php',
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
+        'App\\Galeria' => __DIR__ . '/../..' . '/app/Galeria.php',
         'App\\Http\\Controllers\\AboutController' => __DIR__ . '/../..' . '/app/Http/Controllers/AboutController.php',
         'App\\Http\\Controllers\\AlunoController' => __DIR__ . '/../..' . '/app/Http/Controllers/AlunoController.php',
         'App\\Http\\Controllers\\AppBaseController' => __DIR__ . '/../..' . '/app/Http/Controllers/AppBaseController.php',
@@ -358,6 +358,7 @@ class ComposerStaticInitb6ccc422fd019f39b3ce39a15f96ac31
         'App\\Http\\Controllers\\GaleriaController' => __DIR__ . '/../..' . '/app/Http/Controllers/GaleriaController.php',
         'App\\Http\\Controllers\\HomeController' => __DIR__ . '/../..' . '/app/Http/Controllers/HomeController.php',
         'App\\Http\\Controllers\\IndexController' => __DIR__ . '/../..' . '/app/Http/Controllers/IndexController.php',
+        'App\\Http\\Controllers\\InstituicaoController' => __DIR__ . '/../..' . '/app/Http/Controllers/InstituicaoController.php',
         'App\\Http\\Controllers\\UserController' => __DIR__ . '/../..' . '/app/Http/Controllers/UserController.php',
         'App\\Http\\Controllers\\UsuariosController' => __DIR__ . '/../..' . '/app/Http/Controllers/UsuariosController.php',
         'App\\Http\\Controllers\\VideoController' => __DIR__ . '/../..' . '/app/Http/Controllers/VideoController.php',
@@ -410,6 +411,7 @@ class ComposerStaticInitb6ccc422fd019f39b3ce39a15f96ac31
         'CreateContatosTable' => __DIR__ . '/../..' . '/database/migrations/2017_05_30_195237_create_contatos_table.php',
         'CreateCursoVideosTable' => __DIR__ . '/../..' . '/database/migrations/2017_05_31_233845_create_curso_videos_table.php',
         'CreateCursosTable' => __DIR__ . '/../..' . '/database/migrations/2017_05_30_192859_create_cursos_table.php',
+        'CreateGaleriasTable' => __DIR__ . '/../..' . '/database/migrations/2017_08_21_174916_create_galerias_table.php',
         'CreatePasswordResetsTable' => __DIR__ . '/../..' . '/database/migrations/2014_10_12_100000_create_password_resets_table.php',
         'CreateUsersTable' => __DIR__ . '/../..' . '/database/migrations/2014_10_12_000000_create_users_table.php',
         'CreateprofessorUsersTable' => __DIR__ . '/../..' . '/database/migrations/2017_05_30_191834_create_professor_users_table.php',
