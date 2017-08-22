@@ -1,4 +1,4 @@
-@extends('master')
+@extends('frontend.master')
 
 @section('content')
 	<main class="conteudoPrincipal" style="background: #eef1f2;">

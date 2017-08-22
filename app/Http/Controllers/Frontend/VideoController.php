@@ -23,6 +23,6 @@ class VideoController extends Controller
 
 		$curso = Curso::where('id', $code)->first();
 
-		return view('detalhe-curso', ['detalhe' => $detalhe, 'code' => $code, 'curso' => $curso]);
+		return view('frontend.detalhe-curso', ['detalhe' => $detalhe, 'code' => $code, 'curso' => $curso]);
 	}
 }

@@ -18,6 +18,6 @@ class GaleriaController extends Controller {
 	 * @return Response
 	 */
 	public function index() {
-		return view('galeria');
+		return view('frontend.galeria');
 	}
 }

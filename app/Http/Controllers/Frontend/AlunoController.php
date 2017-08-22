@@ -9,6 +9,6 @@ class AlunoController extends Controller
 {
     public function index()
     {
-        return view('loginAluno');
+        return view('frontend.loginAluno');
     }
 }

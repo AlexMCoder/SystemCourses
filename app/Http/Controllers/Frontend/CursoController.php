@@ -21,6 +21,6 @@ class CursoController extends AppBaseController {
 
 		$cursos = Curso::all();
 
-		return view('cursos', compact('professores', 'cursos'));
+		return view('frontend.cursos', compact('professores', 'cursos'));
 	}
 }

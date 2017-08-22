@@ -12,6 +12,6 @@ class IndexController extends Controller {
 
 		$cursos = Curso::limit(3)->get();
 
-		return view('index', compact('professores', 'cursos'));
+		return view('frontend.index', compact('professores', 'cursos'));
 	}
 }

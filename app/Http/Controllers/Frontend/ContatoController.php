@@ -20,7 +20,7 @@ class ContatoController extends AppBaseController {
 	}
 
 	public function contatoEnviaFront(){
-		return view('contato');
+		return view('frontend.contato');
 	}
 
 }

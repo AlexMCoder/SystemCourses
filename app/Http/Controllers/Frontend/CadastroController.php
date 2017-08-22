@@ -8,6 +8,6 @@ use Illuminate\Http\Request;
 class CadastroController extends Controller
 {
     public function index(){
-    	return view('cadastrar');
+    	return view('frontend.cadastrar');
     }
 }
