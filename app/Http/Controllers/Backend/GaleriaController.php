@@ -1,11 +1,12 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Backend;
 
 use App\Http\Controllers\AppBaseController;
 use App\Models\Galeria;
 use App\Models\professorUser;
 use Flash;
+use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Prettus\Repository\Criteria\RequestCriteria;
 

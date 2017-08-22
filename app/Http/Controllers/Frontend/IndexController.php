@@ -1,9 +1,10 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Frontend;
 
 use App\Models\Curso;
 use App\Models\professorUser;
+use App\Http\Controllers\Controller;
 
 class IndexController extends Controller {
 	public function index() {
