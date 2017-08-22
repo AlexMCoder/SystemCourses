@@ -6,6 +6,10 @@
     <a href="{!! route('cursos.index') !!}"><i class="fa fa-edit"></i><span>Cursos</span></a>
 </li>
 
+<li class="{{ Request::is('doaces*') ? 'active' : '' }}">
+    <a href="{!! route('index.doacoes') !!}"><i class="fa fa-edit"></i><span>Doações</span></a>
+</li>
+
 <li class="{{ Request::is('contatos*') ? 'active' : '' }}">
     <a href="{!! route('contatos.index') !!}"><i class="fa fa-edit"></i><span>Contatos</span></a>
 </li>
