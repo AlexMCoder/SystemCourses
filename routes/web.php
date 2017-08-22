@@ -54,6 +54,8 @@ Route::group(['middleware' => 'auth', 'prefix' => '/sistema'], function () {
 		Route::get('/galeriaPainel', 'GaleriaController@index')->name('index.galeria');
 		Route::get('/instituicoes', 'InstituicoesController@index')->name('index.instituicoes');
 		Route::get('/doacoes', 'DoacoesController@index')->name('index.doacoes');
+
+		Route::get('/alunos', 'Backend\AlunosController@index')->name('index.aluno');
 	});
 
 

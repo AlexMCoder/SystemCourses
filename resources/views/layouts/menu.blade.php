@@ -2,6 +2,10 @@
     <a href="{!! route('professorUsers.index') !!}"><i class="fa fa-edit"></i><span>Professores</span></a>
 </li>
 
+<li class="{{ Request::is('aluno*') ? 'active' : '' }}">
+    <a href="{!! route('index.aluno') !!}"><i class="fa fa-edit"></i><span>Alunos</span></a>
+</li>
+
 <li class="{{ Request::is('cursos*') ? 'active' : '' }}">
     <a href="{!! route('cursos.index') !!}"><i class="fa fa-edit"></i><span>Cursos</span></a>
 </li>
