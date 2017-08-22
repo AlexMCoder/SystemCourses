@@ -52,6 +52,7 @@ Route::group(['middleware' => 'auth', 'prefix' => '/sistema'], function () {
 		Route::post('/cursos/videos/save', 'VideoController@update')->name('save.video');
 
 		Route::get('/galeriaPainel', 'GaleriaController@index')->name('index.galeria');
+		Route::get('/instituicoes', 'InstituicoesController@index')->name('index.instituicoes');
 	});
 
 
