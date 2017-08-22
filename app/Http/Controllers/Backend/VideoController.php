@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Backend;
 
 use App\Http\Controllers\AppBaseController;
 use App\Http\Requests\CreateCursoRequest;
@@ -10,6 +10,7 @@ use App\Models\CursoVideo;
 use App\Models\professorUser;
 use App\Repositories\CursoRepository;
 use Flash;
+use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Prettus\Repository\Criteria\RequestCriteria;
 
