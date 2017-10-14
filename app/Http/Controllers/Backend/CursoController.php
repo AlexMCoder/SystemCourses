@@ -28,11 +28,11 @@ class CursoController extends AppBaseController {
 	 * @return Response
 	 */
 	public function index(Request $request) {
+
 		$this->cursoRepository->pushCriteria(new RequestCriteria($request));
 		$cursos = $this->cursoRepository->all();
 
-		return view('cursos.index')
-			->with('cursos', $cursos);
+		return view('cursos.index')->with('cursos', $cursos);
 	}
 
 	/**
@@ -52,7 +52,6 @@ class CursoController extends AppBaseController {
 	 * @return Response
 	 */
 	public function store(CreateCursoRequest $request) {
-		// $input = $request->all();
 
 		$request->file('file')->move('img/cursos', $request->file('file')->getClientOriginalName());
 		$request->merge(['file' => $request->file('file')->getClientOriginalName()]);
@@ -80,7 +79,7 @@ class CursoController extends AppBaseController {
 		$curso = $this->cursoRepository->findWithoutFail($id);
 
 		if (empty($curso)) {
-			Flash::error('Curso not found');
+			Flash::error('Curso não existe!');
 
 			return redirect(route('cursos.index'));
 		}
@@ -96,6 +95,7 @@ class CursoController extends AppBaseController {
 	 * @return Response
 	 */
 	public function edit($id) {
+
 		$curso = $this->cursoRepository->findWithoutFail($id);
 
 		if (empty($curso)) {
@@ -116,6 +116,7 @@ class CursoController extends AppBaseController {
 	 * @return Response
 	 */
 	public function update($id, UpdateCursoRequest $request) {
+		
 		$curso = $this->cursoRepository->findWithoutFail($id);
 
 		if (empty($curso)) {
@@ -139,6 +140,7 @@ class CursoController extends AppBaseController {
 	 * @return Response
 	 */
 	public function destroy($id) {
+		
 		$curso = $this->cursoRepository->findWithoutFail($id);
 
 		if (empty($curso)) {

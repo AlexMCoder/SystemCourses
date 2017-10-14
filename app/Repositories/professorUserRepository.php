@@ -13,7 +13,8 @@ class professorUserRepository extends BaseRepository
     protected $fieldSearchable = [
         'id',
         'name',
-        'email'
+        'email',
+        'password'
     ];
 
     /**
