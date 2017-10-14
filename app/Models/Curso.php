@@ -43,7 +43,9 @@ class Curso extends Model
      * @var array
      */
     public static $rules = [
-        'name' => 'required'
+        'name' => 'required',
+        'file' => 'required',
+        'descricao' => 'required'
     ];
 
     
