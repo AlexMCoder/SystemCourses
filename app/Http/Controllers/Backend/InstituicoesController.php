@@ -8,6 +8,6 @@ use Illuminate\Http\Request;
 class InstituicoesController extends Controller
 {
     public function index(){
-    	return view('instituicoes.index');
+    	return view('backend.instituicoes.index');
     }
 }

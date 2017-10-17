@@ -29,7 +29,7 @@ class ContatoController extends AppBaseController {
 		$this->contatoRepository->pushCriteria(new RequestCriteria($request));
 		$contatos = $this->contatoRepository->all();
 
-		return view('contatos.index')
+		return view('backend.contatos.index')
 			->with('contatos', $contatos);
 	}
 	/**
@@ -38,7 +38,7 @@ class ContatoController extends AppBaseController {
 	 * @return Response
 	 */
 	public function create() {
-		return view('contatos.create');
+		return view('backend.contatos.create');
 	}
 
 	/**
@@ -55,7 +55,7 @@ class ContatoController extends AppBaseController {
 
 		Flash::success('Contato saved successfully.');
 
-		return redirect(route('contatos.index'));
+		return redirect(route('backend.contatos.index'));
 	}
 
 	/**
@@ -71,10 +71,10 @@ class ContatoController extends AppBaseController {
 		if (empty($contato)) {
 			Flash::error('Contato not found');
 
-			return redirect(route('contatos.index'));
+			return redirect(route('backend.contatos.index'));
 		}
 
-		return view('contatos.show')->with('contato', $contato);
+		return view('backend.contatos.show')->with('contato', $contato);
 	}
 
 	/**
@@ -90,10 +90,10 @@ class ContatoController extends AppBaseController {
 		if (empty($contato)) {
 			Flash::error('Contato not found');
 
-			return redirect(route('contatos.index'));
+			return redirect(route('backend.contatos.index'));
 		}
 
-		return view('contatos.edit')->with('contato', $contato);
+		return view('backend.contatos.edit')->with('contato', $contato);
 	}
 
 	/**
@@ -110,14 +110,14 @@ class ContatoController extends AppBaseController {
 		if (empty($contato)) {
 			Flash::error('Contato not found');
 
-			return redirect(route('contatos.index'));
+			return redirect(route('backend.contatos.index'));
 		}
 
 		$contato = $this->contatoRepository->update($request->all(), $id);
 
 		Flash::success('Contato updated successfully.');
 
-		return redirect(route('contatos.index'));
+		return redirect(route('backend.contatos.index'));
 	}
 
 	/**
@@ -133,24 +133,13 @@ class ContatoController extends AppBaseController {
 		if (empty($contato)) {
 			Flash::error('Contato not found');
 
-			return redirect(route('contatos.index'));
+			return redirect(route('backend.contatos.index'));
 		}
 
 		$this->contatoRepository->delete($id);
 
 		Flash::success('Contato deleted successfully.');
 
-		return redirect(route('contatos.index'));
+		return redirect(route('backend.contatos.index'));
 	}
-
-	public function contatoEnvia(Request $request) {
-		$contato = Contato::create(['nome' => $request->name, 'email' => $request->email, 'mensagem' => $request->mensagem]);
-
-		return redirect()->back();
-	}
-
-	public function contatoEnviaFront(){
-		return view('contato');
-	}
-
 }
