@@ -15,7 +15,7 @@
         <div class="clearfix"></div>
         <div class="box box-primary">
             <div class="box-body">
-                    @include('contatos.table')
+                    @include('backend.contatos.table')
             </div>
         </div>
     </div>
