@@ -15,7 +15,7 @@
         <div class="clearfix"></div>
         <div class="box box-primary">
             <div class="box-body">
-                    @include('professor_users.table')
+                    @include('backend.professor_users.table')
             </div>
         </div>
     </div>
