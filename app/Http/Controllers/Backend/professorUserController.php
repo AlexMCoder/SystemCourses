@@ -28,7 +28,7 @@ class professorUserController extends AppBaseController {
 		$this->professorUserRepository->pushCriteria(new RequestCriteria($request));
 		$professorUsers = $this->professorUserRepository->all();
 
-		return view('professor_users.index')
+		return view('backend.professor_users.index')
 			->with('professorUsers', $professorUsers);
 	}
 
@@ -38,7 +38,7 @@ class professorUserController extends AppBaseController {
 	 * @return Response
 	 */
 	public function create() {
-		return view('professor_users.create');
+		return view('backend.professor_users.create');
 	}
 
 	/**
@@ -75,7 +75,7 @@ class professorUserController extends AppBaseController {
 			return redirect(route('professorUsers.index'));
 		}
 
-		return view('professor_users.show')->with('professorUser', $professorUser);
+		return view('backend.professor_users.show')->with('professorUser', $professorUser);
 	}
 
 	/**
@@ -94,7 +94,7 @@ class professorUserController extends AppBaseController {
 			return redirect(route('professorUsers.index'));
 		}
 
-		return view('professor_users.edit')->with('professorUser', $professorUser);
+		return view('backend.professor_users.edit')->with('professorUser', $professorUser);
 	}
 
 	/**

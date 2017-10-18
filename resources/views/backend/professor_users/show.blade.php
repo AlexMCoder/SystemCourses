@@ -10,7 +10,7 @@
         <div class="box box-primary">
             <div class="box-body">
                 <div class="row" style="padding-left: 20px">
-                    @include('professor_users.show_fields')
+                    @include('backend.professor_users.show_fields')
                     <a href="{!! route('professorUsers.index') !!}" class="btn btn-default">Back</a>
                 </div>
             </div>
