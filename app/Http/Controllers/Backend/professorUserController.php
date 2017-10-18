@@ -54,7 +54,7 @@ class professorUserController extends AppBaseController {
 
 		$professorUser = $this->professorUserRepository->create($input);
 
-		Flash::success('Professor User saved successfully.');
+		Flash::success('Professor saved successfully.');
 
 		return redirect(route('professorUsers.index'));
 	}

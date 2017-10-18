@@ -34,14 +34,14 @@ Route::get('field_template', '\InfyOm\GeneratorBuilder\Controllers\GeneratorBuil
 Route::post('generator_builder/generate', '\InfyOm\GeneratorBuilder\Controllers\GeneratorBuilderController@generate');
 
 Route::group(['middleware' => 'auth', 'prefix' => '/sistema'], function () {
-		Route::get('/', 'HomeController@index');
+		Route::get('/', 'Backend\HomeController@index');
+		Route::get('/home', 'Backend\HomeController@index');
 
 		Route::resource('/professorUsers', 'Backend\professorUserController');
 
 		Route::resource('/cursos', 'Backend\CursoController');
 
 		Route::resource('/contatos', 'Backend\ContatoController');
-		Route::resource('usuarios', 'Backend\UsuariosController');
 
 		Route::resource('users', 'UserController');
 
