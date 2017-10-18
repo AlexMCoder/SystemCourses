@@ -2,9 +2,6 @@
 
 @section('content')
 <div class="container">
-    <div class="row">
-
-
-    </div>
+    <h1>Bem Vindo!</h1>
 </div>
 @endsection

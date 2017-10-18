@@ -14,7 +14,7 @@ class professorUser extends Model
 {
     use SoftDeletes;
 
-    public $table = 'users';
+    public $table = 'professor_users';
     
 
     protected $dates = ['deleted_at'];
