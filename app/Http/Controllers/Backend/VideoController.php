@@ -42,7 +42,7 @@ class VideoController extends Controller
 	public function editVideo($code, $id) {
 		$video = CursoVideo::where('id', $id)->first();
 
-		return view('cursos.videos.edit', ['video' => $video]);
+		return view('backend.cursos.videos.edit', ['video' => $video]);
 	}
 
 	public function update(Request $request) {
@@ -71,11 +71,11 @@ class VideoController extends Controller
     public function submitVideo($code) {
 		$videos = CursoVideo::where('curso_id', $code)->get();
 
-		return view('cursos.videos.list', ['videos' => $videos, 'code' => $code]);
+		return view('backend.cursos.videos.list', ['videos' => $videos, 'code' => $code]);
 	}
 	public function createVideo($code) {
 		$videos = Curso::where('id', $code)->first();
-		return view('cursos.videos.video', compact('videos'));
+		return view('backend.cursos.videos.video', compact('videos'));
 	}
 
 	//preview in FRONT

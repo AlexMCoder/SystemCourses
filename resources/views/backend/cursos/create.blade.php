@@ -14,7 +14,7 @@
                 <div class="row">
                     {!! Form::open(['route' => 'cursos.store', 'files' => true]) !!}
 
-                        @include('cursos.fields')
+                        @include('backend.cursos.fields')
 
                     {!! Form::close() !!}
                 </div>

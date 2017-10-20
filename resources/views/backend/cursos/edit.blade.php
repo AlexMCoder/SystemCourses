@@ -3,7 +3,7 @@
 @section('content')
     <section class="content-header">
         <h1>
-            Editar Vídeo
+            Editar Curso
         </h1>
    </section>
    <div class="content">
@@ -11,9 +11,9 @@
        <div class="box box-primary">
            <div class="box-body">
                <div class="row">
-                   {!! Form::model($video, ['route' => ['save.video', $video->id], 'method' => 'patch']) !!}
+                   {!! Form::model($curso, ['route' => ['cursos.update', $curso->id], 'method' => 'patch']) !!}
 
-                        @include('cursos.videos.fields')
+                        @include('backend.cursos.fields')
 
                    {!! Form::close() !!}
                </div>
