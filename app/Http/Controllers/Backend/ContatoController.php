@@ -53,7 +53,7 @@ class ContatoController extends AppBaseController {
 
 		$contato = $this->contatoRepository->create($input);
 
-		Flash::success('Contato saved successfully.');
+		Flash::success('Contato salvo com sucesso.');
 
 		return redirect(route('backend.contatos.index'));
 	}
@@ -69,7 +69,7 @@ class ContatoController extends AppBaseController {
 		$contato = $this->contatoRepository->findWithoutFail($id);
 
 		if (empty($contato)) {
-			Flash::error('Contato not found');
+			Flash::error('Contato não encontrado');
 
 			return redirect(route('backend.contatos.index'));
 		}
@@ -88,7 +88,7 @@ class ContatoController extends AppBaseController {
 		$contato = $this->contatoRepository->findWithoutFail($id);
 
 		if (empty($contato)) {
-			Flash::error('Contato not found');
+			Flash::error('Contato não encontrado');
 
 			return redirect(route('backend.contatos.index'));
 		}
@@ -108,14 +108,14 @@ class ContatoController extends AppBaseController {
 		$contato = $this->contatoRepository->findWithoutFail($id);
 
 		if (empty($contato)) {
-			Flash::error('Contato not found');
+			Flash::error('Contato não encontrado');
 
 			return redirect(route('backend.contatos.index'));
 		}
 
 		$contato = $this->contatoRepository->update($request->all(), $id);
 
-		Flash::success('Contato updated successfully.');
+		Flash::success('Contato atualizado com sucesso.');
 
 		return redirect(route('backend.contatos.index'));
 	}
@@ -131,14 +131,14 @@ class ContatoController extends AppBaseController {
 		$contato = $this->contatoRepository->findWithoutFail($id);
 
 		if (empty($contato)) {
-			Flash::error('Contato not found');
+			Flash::error('Contato não encontrado');
 
 			return redirect(route('backend.contatos.index'));
 		}
 
 		$this->contatoRepository->delete($id);
 
-		Flash::success('Contato deleted successfully.');
+		Flash::success('Contato deletado com sucesso');
 
 		return redirect(route('backend.contatos.index'));
 	}
