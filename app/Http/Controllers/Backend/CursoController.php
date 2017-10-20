@@ -32,7 +32,7 @@ class CursoController extends AppBaseController {
 		$this->cursoRepository->pushCriteria(new RequestCriteria($request));
 		$cursos = $this->cursoRepository->all();
 
-		return view('cursos.index')->with('cursos', $cursos);
+		return view('backend.cursos.index')->with('cursos', $cursos);
 	}
 
 	/**
@@ -41,7 +41,7 @@ class CursoController extends AppBaseController {
 	 * @return Response
 	 */
 	public function create() {
-		return view('cursos.create');
+		return view('backend.cursos.create');
 	}
 
 	/**
@@ -81,10 +81,10 @@ class CursoController extends AppBaseController {
 		if (empty($curso)) {
 			Flash::error('Curso não existe!');
 
-			return redirect(route('cursos.index'));
+			return redirect(route('backend.cursos.index'));
 		}
 
-		return view('cursos.show')->with('curso', $curso);
+		return view('backend.cursos.show')->with('curso', $curso);
 	}
 
 	/**
@@ -101,10 +101,10 @@ class CursoController extends AppBaseController {
 		if (empty($curso)) {
 			Flash::error('Curso not found');
 
-			return redirect(route('cursos.index'));
+			return redirect(route('backend.cursos.index'));
 		}
 
-		return view('cursos.edit')->with('curso', $curso);
+		return view('backend.cursos.edit')->with('curso', $curso);
 	}
 
 	/**
@@ -154,14 +154,5 @@ class CursoController extends AppBaseController {
 		Flash::success('Curso deleted successfully.');
 
 		return redirect(route('cursos.index'));
-	}
-
-	//preview in FRONT
-	public function listarCursos() {
-		$professores = professorUser::all();
-
-		$cursos = Curso::all();
-
-		return view('cursos', compact('professores', 'cursos'));
 	}
 }
