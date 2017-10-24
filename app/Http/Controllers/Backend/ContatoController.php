@@ -32,31 +32,6 @@ class ContatoController extends AppBaseController {
 		return view('backend.contatos.index')
 			->with('contatos', $contatos);
 	}
-	/**
-	 * Show the form for creating a new Contato.
-	 *
-	 * @return Response
-	 */
-	public function create() {
-		return view('backend.contatos.create');
-	}
-
-	/**
-	 * Store a newly created Contato in storage.
-	 *
-	 * @param CreateContatoRequest $request
-	 *
-	 * @return Response
-	 */
-	public function store(CreateContatoRequest $request) {
-		$input = $request->all();
-
-		$contato = $this->contatoRepository->create($input);
-
-		Flash::success('Contato salvo com sucesso.');
-
-		return redirect(route('backend.contatos.index'));
-	}
 
 	/**
 	 * Display the specified Contato.
@@ -78,49 +53,6 @@ class ContatoController extends AppBaseController {
 	}
 
 	/**
-	 * Show the form for editing the specified Contato.
-	 *
-	 * @param  int $id
-	 *
-	 * @return Response
-	 */
-	public function edit($id) {
-		$contato = $this->contatoRepository->findWithoutFail($id);
-
-		if (empty($contato)) {
-			Flash::error('Contato não encontrado');
-
-			return redirect(route('backend.contatos.index'));
-		}
-
-		return view('backend.contatos.edit')->with('contato', $contato);
-	}
-
-	/**
-	 * Update the specified Contato in storage.
-	 *
-	 * @param  int              $id
-	 * @param UpdateContatoRequest $request
-	 *
-	 * @return Response
-	 */
-	public function update($id, UpdateContatoRequest $request) {
-		$contato = $this->contatoRepository->findWithoutFail($id);
-
-		if (empty($contato)) {
-			Flash::error('Contato não encontrado');
-
-			return redirect(route('backend.contatos.index'));
-		}
-
-		$contato = $this->contatoRepository->update($request->all(), $id);
-
-		Flash::success('Contato atualizado com sucesso.');
-
-		return redirect(route('backend.contatos.index'));
-	}
-
-	/**
 	 * Remove the specified Contato from storage.
 	 *
 	 * @param  int $id
@@ -133,13 +65,13 @@ class ContatoController extends AppBaseController {
 		if (empty($contato)) {
 			Flash::error('Contato não encontrado');
 
-			return redirect(route('backend.contatos.index'));
+			return redirect(route('contatos.index'));
 		}
 
 		$this->contatoRepository->delete($id);
 
 		Flash::success('Contato deletado com sucesso');
 
-		return redirect(route('backend.contatos.index'));
+		return redirect(route('contatos.index'));
 	}
 }

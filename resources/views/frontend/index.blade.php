@@ -1,6 +1,11 @@
 @extends('frontend.master')
 
 @section('content')
+
+	  <div class="clearfix"></div>
+
+        @include('flash::message')
+
 	<div class="banner">
 		<h3>Compartilhando Conhecimento</h3>
 		<h4>Ajudando a Sociedade</h4>
