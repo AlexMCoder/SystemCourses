@@ -15,12 +15,7 @@ class ContatoController extends AppBaseController {
 
 	public function contatoEnvia(Request $request) {
 		$contato = Contato::create(['nome' => $request->name, 'email' => $request->email, 'mensagem' => $request->mensagem]);
-
-		return redirect()->back();
+		Flash::success('Enviado com sucesso!');
+		return redirect()->back();			
 	}
-
-	public function contatoEnviaFront(){
-		return view('frontend.contato');
-	}
-
 }
